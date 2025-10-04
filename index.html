@@ -33,17 +33,17 @@
 <div class="page-wrap" style="background: #FFF0E6">
 
     <!--start Hidden Song List -->
-    <audio id="audioPlayer" preload="auto"></audio>
-    <ul id="playlist" style="display: none;">
-        <li data-src="https://www.iotsinergi.com/sample/Sample 1.mp3">Song 1</li>
-        <li data-src="https://www.iotsinergi.com/sample/Sample 2.mp3">Song 2</li>
-        <li data-src="https://www.iotsinergi.com/sample/Sample 3.mp3">Song 3</li>
-        <li data-src="https://www.iotsinergi.com/sample/Sample 4.mp3">Song 4</li>
-        <li data-src="https://www.iotsinergi.com/sample/Sample 5.mp3">Song 5</li>
-        <li data-src="https://www.iotsinergi.com/sample/Sample 6.mp3">Song 6</li>
-    </ul>
+    <!--<audio id="audioPlayer" preload="auto"></audio>-->
+    <!--<ul id="playlist" style="display: none;">-->
+    <!--    <li data-src="https://www.iotsinergi.com/sample/Sample 1.mp3">Song 1</li>-->
+    <!--    <li data-src="https://www.iotsinergi.com/sample/Sample 2.mp3">Song 2</li>-->
+    <!--    <li data-src="https://www.iotsinergi.com/sample/Sample 3.mp3">Song 3</li>-->
+    <!--    <li data-src="https://www.iotsinergi.com/sample/Sample 4.mp3">Song 4</li>-->
+    <!--    <li data-src="https://www.iotsinergi.com/sample/Sample 5.mp3">Song 5</li>-->
+    <!--    <li data-src="https://www.iotsinergi.com/sample/Sample 6.mp3">Song 6</li>-->
+    <!--</ul>-->
     <!--<audio autoplay id="myAudio" src="https://is3.cloudhost.id/tessffg/Forever%20and%20Ever%20and%20Always%20%28The%20Softer%20Version%29%20Ryan%20Mack.mp3"></audio>-->
-    <!--<audio autoplay id="myAudio" src="https://www.iotsinergi.com/sample/Sample 1.mp3"></audio>-->
+    <audio autoplay id="myAudio" src="https://www.iotsinergi.com/sample/Sample 7.mp3"></audio>
     <!--end Hidden Song List -->
 
     <!-- start preloader -->
@@ -56,6 +56,7 @@
                     <div class="loader-line"></div>
                 </div>
                 <img src="assets/images/preloader-nh.png" alt="">
+
             </div>
 
         </div>
@@ -66,6 +67,11 @@
                 </div>
             </div>
         </section>
+
+        <div class="center text-center">
+            <button type="button" id="startButton" class="btn btn-primary">🎵 Buka Undangan</button>
+        </div>
+
     </div>
 
     <!-- end preloader -->
@@ -87,7 +93,12 @@
                                     </p>
                                     <p>
                                         <span>Ijinkanlah kami menikahkan putra-putri kami.</span>
+
+
                                     </p>
+                                    <p>
+                                    </p>
+
 
                                 </div>
                             </div>
@@ -464,22 +475,23 @@
 <!-- Custom script for this template -->
 <script src="assets/js/script.js"></script>
 <script>
-    // Get a reference to the audio element
-    // const audioPlayer = document.getElementById('myAudio');
+    Get a reference to the audio element
+    const audioPlayer = document.getElementById('myAudio');
 
-    // Function to play the audio
-    // audioPlayer.addEventListener('ended', () => {
-    //     audioPlayer.currentTime = 0; // Rewind to the beginning
-    //     audioPlayer.play();         // Start playing again
-    // });
+    Function to play the audio
+    audioPlayer.addEventListener('ended', () => {
+        audioPlayer.currentTime = 0; // Rewind to the beginning
+        audioPlayer.play();         // Start playing again
+    });
 
 
 
     // New Engine player
-    document.addEventListener('DOMContentLoaded', () => {
+    /*document.addEventListener('DOMContentLoaded', () => {
         // 1. Get DOM Elements
         const audioPlayer = document.getElementById('audioPlayer');
         const playlistContainer = document.getElementById('playlist');
+        const startButton = document.getElementById('startButton'); // Get the new button
         const currentSongDisplay = document.getElementById('currentSongDisplay');
 
         // 2. Extract Playlist Links
@@ -488,73 +500,77 @@
 
         if (songs.length === 0) {
             console.error("No songs found in the playlist.");
-            return; // Stop if there are no songs
+            return;
         }
 
-        let currentSongIndex = -1; // Initialize to -1
+        let currentSongIndex = -1;
+        let hasStarted = false; // New flag to ensure logic runs only once
 
-        // 3. Helper Function to Get a Random Index
+        // 3. Helper Function to Get a Random Index (Same as before)
         function getRandomSongIndex() {
-            if (songs.length === 1) {
-                return 0; // If only one song, just play that one
-            }
-
+            if (songs.length === 1) return 0;
             let newIndex;
-            // Ensure the new random song is not the same as the current one (if possible)
             do {
                 newIndex = Math.floor(Math.random() * songs.length);
             } while (newIndex === currentSongIndex);
-
             return newIndex;
         }
 
-        // 4. Function to Play a Song
+        // 4. Function to Play a Song (Same as before, but the entry point is now different)
         function playSong(index) {
             currentSongIndex = index;
-            const songURL = songs[index];
-
-            // Update the audio source and try to play
-            audioPlayer.src = songURL;
-            audioPlayer.load(); // Reload the audio element with the new source
+            audioPlayer.src = songs[index];
+            audioPlayer.load();
 
             const playPromise = audioPlayer.play();
 
-            // Handle the Play Promise for modern browsers (deals with Autoplay restrictions)
             if (playPromise !== undefined) {
                 playPromise.then(_ => {
-                    // Autoplay started successfully
                     console.log(`Now playing song index: ${currentSongIndex}`);
                     if (currentSongDisplay) {
-                        currentSongDisplay.textContent = currentSongIndex + 1; // Display 1-based index
+                        currentSongDisplay.textContent = currentSongIndex + 1;
                     }
                 }).catch(error => {
-                    // Autoplay failed (e.g., due to browser restrictions)
-                    console.warn("Autoplay was prevented by the browser. User interaction may be required.");
-                    // You might want to display a 'Play' button here
+                    // This catch handles policy issues, but the button should resolve it
+                    console.warn("Play attempt failed (may still be a policy issue after reload).");
                 });
             }
         }
 
-        // 5. Autoplay the First Random Song
-        const startSongIndex = getRandomSongIndex();
-        playSong(startSongIndex);
+        // 5. 🛑 CRITICAL FIX: Attach the start logic to the button click
+        startButton.addEventListener('click', () => {
 
-        // 6. Event Listener for Looping
-        // 'ended' event fires when the media has finished playing
+            console.log('clik button start')
+
+            preloader();
+
+            if (hasStarted) return; // Prevent double clicking from restarting
+
+            const startSongIndex = getRandomSongIndex();
+            playSong(startSongIndex);
+
+            // Hide the button once music starts
+            startButton.style.display = 'none';
+            hasStarted = true;
+        });
+
+
+        // 6. Event Listener for Looping (Same as before)
+        // This logic works fine because it's triggered by the 'ended' event, not an initial autoplay
         audioPlayer.addEventListener('ended', () => {
             console.log("Song ended. Playing next random song...");
             const nextSongIndex = getRandomSongIndex();
             playSong(nextSongIndex);
         });
 
-        // 7. Error Handling (Optional but Recommended)
+        // 7. Error Handling (Same as before)
         audioPlayer.addEventListener('error', (e) => {
             console.error(`Error loading/playing song at index ${currentSongIndex}:`, e);
             // Try to play the next random song if the current one fails
             const nextSongIndex = getRandomSongIndex();
             playSong(nextSongIndex);
         });
-    });
+    });*/
 </script>
 </body>
 
