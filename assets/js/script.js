@@ -881,11 +881,11 @@
 
         //preloader();
 
-        if (!isMobile) {
-            setTimeout(() => {
-                playSong();
-            }, 1000);
-        }
+        // if (!isMobile) {
+        //     setTimeout(() => {
+        //         playSong();
+        //     }, 1000);
+        // }
 
         sortingGallery();
 
@@ -1025,5 +1025,6 @@
 
 
 })(window.jQuery);
+
 
 
