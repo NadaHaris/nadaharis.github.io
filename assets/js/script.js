@@ -879,13 +879,7 @@
     ==========================================================================*/
     $(window).on('load', function () {
 
-        preloader();
-
-        // if (!isMobile) {
-        //     setTimeout(() => {
-        //         playSong();
-        //     }, 1000);
-        // }
+        // preloader();
 
         sortingGallery();
 
@@ -896,22 +890,18 @@
         smoothScrolling($("#navbar > ul > li > a[href^='#'], .preview-middle-text a.scrool[href^='#'] "), $(".wpo-site-header .navigation, .site-header .nav").innerHeight());
     });
 
+
+   
+
     $('#bukaUndangan').on('click', function () {
         preloader();
-        playAudio();
+        // playAudio();
+
+        const audio = document.querySelector('audio');
+        audio.muted = false;
+        audio.play();
 
     })
-
-    function playAudio(){
-        var isYT = false;
-        if(document.body.contains(document.getElementById("song"))) {
-            document.getElementById("song").play();
-            isYT = false;
-        } else {
-            isYT = true;
-            player.playVideo();
-        }
-    }
 
 
     /*==========================================================================
@@ -1025,6 +1015,7 @@
 
 
 })(window.jQuery);
+
 
 
 
