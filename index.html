@@ -480,28 +480,42 @@
 <!-- Custom script for this template -->
 <script src="assets/js/script.js"></script>
 <script>
- let audioStarted = false;
-    const audio = document.getElementById('song');
+ // let audioStarted = false;
+ //    const audio = document.getElementById('song');
 
-    // Start audio on first user interaction with the page
-    document.addEventListener('click', startAudio, { once: true });
-    document.addEventListener('touchstart', startAudio, { once: true });
-    document.addEventListener('keydown', startAudio, { once: true });
+ //    // Start audio on first user interaction with the page
+ //    document.addEventListener('click', startAudio, { once: true });
+ //    document.addEventListener('touchstart', startAudio, { once: true });
+ //    document.addEventListener('keydown', startAudio, { once: true });
 
-    function startAudio() {
-        if (!audioStarted) {
-            audio.play().catch(error => {
-                console.log('Audio play failed:', error);
-            });
-            audioStarted = true;
-        }
-    }
+ //    function startAudio() {
+ //        if (!audioStarted) {
+ //            audio.play().catch(error => {
+ //                console.log('Audio play failed:', error);
+ //            });
+ //            audioStarted = true;
+ //        }
+ //    }
 
-    // Also try autoplay for desktop
-    audio.play().catch(error => {
-        // This will fail on mobile, but that's okay
-        console.log('Autoplay failed (expected on mobile)');
-    });
+ //    // Also try autoplay for desktop
+ //    audio.play().catch(error => {
+ //        // This will fail on mobile, but that's okay
+ //        console.log('Autoplay failed (expected on mobile)');
+ //    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const audio = document.getElementById('song');
+
+  // Wait for first user interaction
+  function enableAudio() {
+    audio.play();
+    document.removeEventListener('click', enableAudio);
+    document.removeEventListener('touchstart', enableAudio);
+  }
+
+  document.addEventListener('click', enableAudio);
+  document.addEventListener('touchstart', enableAudio);
+});
     
 
     
@@ -607,6 +621,7 @@
 
 
 </html>
+
 
 
 
