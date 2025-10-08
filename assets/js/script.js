@@ -879,7 +879,7 @@
     ==========================================================================*/
     $(window).on('load', function () {
 
-        preloader();
+        //preloader();
 
         if (!isMobile) {
             setTimeout(() => {
@@ -895,6 +895,12 @@
 
         smoothScrolling($("#navbar > ul > li > a[href^='#'], .preview-middle-text a.scrool[href^='#'] "), $(".wpo-site-header .navigation, .site-header .nav").innerHeight());
     });
+
+    $('#bukaUndangan').on('click', function () {
+        preloader();
+        playAudio();
+
+    })
 
     function playAudio(){
         var isYT = false;
@@ -1019,4 +1025,5 @@
 
 
 })(window.jQuery);
+
 
