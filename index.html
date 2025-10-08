@@ -103,7 +103,10 @@
                                     </p>
                                     <p>
                                     </p>
+                                    <div class="center text-center mt-5">
 
+                                        <button type="button" id="scrollToSectionButton" class="theme-btn"  >🎵 Buka Undangan</button>
+                                    </div>
 
                                 </div>
                             </div>
@@ -516,7 +519,16 @@
   document.addEventListener('click', enableAudio);
   document.addEventListener('touchstart', enableAudio);
 });
-    
+
+    $('#scrollToSectionButton').click(function(e) {
+        e.preventDefault(); // Prevent default button behavior (e.g., form submission)
+
+        var targetOffset = $('#mempelai').offset().top; // Get the top offset of the target section
+
+        $('html, body').animate({
+            scrollTop: targetOffset // Scroll to the calculated offset
+        }, 1000); // Animation duration in milliseconds (e.g., 1000ms for 1 second)
+    });
 
     
     // Get a reference to the audio element
@@ -621,6 +633,7 @@
 
 
 </html>
+
 
 
 
