@@ -25,6 +25,30 @@
     <!--<link href="assets/css/odometer-theme-default.css" rel="stylesheet">-->
     <link href="assets/css/jquery-ui.css" rel="stylesheet">
     <link href="assets/css/style-nh.css" rel="stylesheet">
+    <style>
+
+        .bukaUndangan {
+            margin-top: 100px; /* Default margin-top for desktop */
+        }
+
+        @media only screen and (max-width: 767px) { /* Adjust max-width as needed for your definition of "mobile" */
+            #bukaUndangan {
+                margin-top: 150px; /* Margin-top for mobile devices */
+            }
+        }
+
+        @media (max-width: 480px) {
+            #bukaUndangan{
+                margin-left: 150px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            #bukaUndangan{
+                margin-left: 150px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +68,7 @@
     <!--</ul>-->
     <!--<audio autoplay id="myAudio" src="https://is3.cloudhost.id/tessffg/Forever%20and%20Ever%20and%20Always%20%28The%20Softer%20Version%29%20Ryan%20Mack.mp3"></audio>-->
     <!-- <audio loop id="myAudio" src="https://www.iotsinergi.com/sample/Sample 7.mp3"></audio> -->
-     <audio  id="song" autoplay muted>
+    <audio  id="song" loop>
         <source src="https://www.iotsinergi.com/sample/Sample 7.mp3" type="audio/mp3">
     </audio>
     <!--end Hidden Song List -->
@@ -66,410 +90,417 @@
         <section class="wpo-blog-section-s21 section-padding">
             <div class="container">
                 <div class="wpo-section-title">
-                    <h2 class="poort-text poort-in-right">The Wedding Of </h2>
+                    <h2 class="poort-text poort-in-right m-auto">
+                        <!--The Wedding Of-->
+                        <p style="font-size: 40px;font-weight: 400 ; margin-bottom: -10px">The Wedding Of</p>
+                        <p style="font-size: 40px;font-weight: 400 ; margin-bottom: -10px">Nada & Haris</p>
+                    </h2>
+
                 </div>
             </div>
         </section>
 
-         <!-- <div class="center text-center mt-5">
+         <div class="center text-center mt-5">
 
-            <button type="button" id="bukaUndangan" class="theme-btn" style="margin-top: 250px" >🎵 Buka Undangan</button>
-            <!--<button type="submit" class="theme-btn" > RSVP</button>-->
-        <!-- </div> -->
+         <button type="button" id="bukaUndangan" class="theme-btn" >🎵 Buka Undangan</button>
+         </div>
+
+</div>
+
+<!-- end preloader -->
+
+<!-- start introduction -->
+<section class="static-hero-s6" id="pengantar" >
+    <div class="static-main-box">
+        <div class="container-fluid">
+            <div class="static-inner-box">
+                <div class="row align-items-center">
+                    <div class="col col-xl-8 col-lg-8 col-md-12 col-12">
+                        <div class="hero-text">
+
+                            <h1 class="wow fadeInUp" data-wow-duration="1200ms">Assalamu`alaikum Warahmatullaahi Wabarakaatuh</h1>
+                            <div class="wow fadeInUp" data-wow-duration="1400ms">
+                                <br>
+                                <p>
+                                    <span>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan.</span>
+                                </p>
+                                <p>
+                                    <span>Ijinkanlah kami menikahkan putra-putri kami.</span>
+
+
+                                </p>
+                                <p>
+                                </p>
+                                <!--<div class="center text-center mt-5">-->
+
+                                <!--    <button type="button" id="scrollToSectionButton" class="theme-btn"  >🎵 Buka Undangan</button>-->
+                                <!--</div>-->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-4 col-lg-4 col-md-12 col-12">
+                        <div class="wpo-static-hero-img">
+                            <div class="wpo-static-hero-ineer-img">
+                                <img src="assets/images/photo-utama.jpg" alt="photo-utama">
+                            </div>
+                            <div class="shape wow fadeInLeftSlow" data-wow-duration="1400ms"><img src="assets/images/left-shape-3-nh.png" alt=""></div>
+                            <div class="shape2 wow fadeInRightSlow" data-wow-duration="1400ms"><img src="assets/images/left-shape-4-nh.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of introduction -->
+
+<!-- start of biodata -->
+<section class="static-hero-s3" id="mempelai">
+    <div class="static-main-box">
+        <div class="container-fluid">
+            <div class="static-inner-box">
+                <div class="row align-items-center">
+                    <div class="col col-xl-3 col-sm-6 col-lg-3 col-12 order-lg-1 order-2">
+                        <div class="couple-text wow fadeInLeftSlow" data-wow-duration="1500ms">
+                            <div class="couple-text-inner">
+                                <i><img src="assets/images/bride2.svg" alt=""></i>
+                                <h3>Nada Syiffa Qolbu</h3>
+                                <p>Putri ketiga dari: </p>
+                                <p>Bapak Nandang Helnawan  </p>
+                                <p> &  </p>
+                                <p>Ibu Neny Hanifah </p>
+                                <div class="social">
+                                    <ul>
+                                        <!--<li><a href="#"><i class="ti-facebook"></i></a></li>-->
+                                        <!--<li><a href="#"><i class="ti-twitter-alt"></i></a></li>-->
+                                        <!--<li><a href="#"><i class="ti-instagram"></i></a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="shape1"><img src="assets/images/little-flower-3.png" alt=""></div>
+                            <div class="shape2"><img src="assets/images/little-flower-2.png" alt=""></div>
+                            <div class="shape3"><img src="assets/images/little-flower-3.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-6 col-lg-6 col-md-8 col-12 order-lg-2 order-1">
+                        <div class="wpo-static-hero-img">
+                            <div class="wpo-static-hero-ineer-img">
+                                <img src="assets/images/dua-mempelai.jpg" alt="">
+
+                                <div class="hero-text wow fadeInUp" data-wow-duration="1500ms">
+                                    <span>We Are Getting Married In</span>
+                                    <p>08 . 11 . 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3 col-lg-3 col-sm-6 col-12 order-lg-3 order-3">
+                        <div class="couple-text wow fadeInRightSlow" data-wow-duration="1500ms">
+                            <div class="couple-text-inner">
+                                <i><img src="assets/images/groom2.svg" alt=""></i>
+                                <h3>Haris Hardianto</h3>
+                                <p>Putra Pertama dari: </p>
+                                <p>Bapak Suwahadi  </p>
+                                <p>& </p>
+                                <p>Almh. Ibu Sutini </p>
+                                <div class="social">
+                                    <ul>
+                                        <!--<li><a href="#"><i class="ti-facebook"></i></a></li>-->
+                                        <!--<li><a href="#"><i class="ti-twitter-alt"></i></a></li>-->
+                                        <!--<li><a href="#"><i class="ti-instagram"></i></a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="shape1"><img src="assets/images/little-flower-3.png" alt=""></div>
+                            <div class="shape2"><img src="assets/images/little-flower-2.png" alt=""></div>
+                            <div class="shape3"><img src="assets/images/little-flower-3.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of biodata -->
+
+
+<!-- start events- -->
+<section class="wpo-event-section-s2 section-padding" id="acara">
+    <div class="container-fluid">
+        <div class="wpo-section-title">
+            <h2 class="poort-text poort-in-right">Akad Nikah</h2>
+        </div>
+        <div class="wpo-event-main" >
+            <div class="event-description" >
+                <p style="color: #242424">Sabtu, 08 November 2025 </p>
+                <p style="color: #242424">09.00 WIB - 11.00 WIB </p>
+                <p style="color: #242424">Mesjid Raya Baiturrahim</p>
+                <p style="color: #242424">Jl. Jayamekar, Kecamatan. Baros, Kota Sukabumi Jawa Barat </p>
+                <p style="color: #242424"><a href="https://maps.app.goo.gl/FoTJgZd4ni3DWfB28" target="_blank"> <i class="fa fa-map-marker"></i> Google Maps </a> </p>
+            </div>
+        </div>
 
     </div>
 
-    <!-- end preloader -->
+    <div class="container-fluid">
+        <div class="wpo-section-title">
+            <h2 class="poort-text poort-in-right">Resepsi Pernikahan</h2>
+        </div>
+        <div class="wpo-event-main" style="color: #242424">
+            <div class="event-description">
+                <p style="color: #242424">Sabtu, 08 November 2025 </p>
+                <p style="color: #242424">11.00 WIB - 14.00 WIB </p>
+                <p style="color: #242424">Gedung HJ.KUSMIATI</p>
+                <p style="color: #242424">Jl. Jayamekar, Kecamatan. Baros, Kota Sukabumi Jawa Barat </p>
+                <p style="color: #242424"><a href="https://maps.app.goo.gl/Yhnsxk82hFMSWGVR6" target="_blank"> <i class="fa fa-map-marker"></i> Google Maps </a> </p>
 
-    <!-- start introduction -->
-    <section class="static-hero-s6" id="pengantar" >
-        <div class="static-main-box">
-            <div class="container-fluid">
-                <div class="static-inner-box">
-                    <div class="row align-items-center">
-                        <div class="col col-xl-8 col-lg-8 col-md-12 col-12">
-                            <div class="hero-text">
-
-                                <h1 class="wow fadeInUp" data-wow-duration="1200ms">Assalamu`alaikum Warahmatullaahi Wabarakaatuh</h1>
-                                <div class="wow fadeInUp" data-wow-duration="1400ms">
-                                    <br>
-                                    <p>
-                                        <span>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan.</span>
-                                    </p>
-                                    <p>
-                                        <span>Ijinkanlah kami menikahkan putra-putri kami.</span>
-
-
-                                    </p>
-                                    <p>
-                                    </p>
-                                   <!-- <div class="center text-center mt-5">
-
-                                        <button type="button" id="scrollToSectionButton" class="theme-btn"  >🎵 Buka Undangan</button>
-                                    </div> -->
-
-                                </div>
-                            </div>
+            </div>
+            <div class="wpo-event-wrap">
+                <div class="wpo-event-inner">
+                    <div class="wpo-event-item">
+                        <div class="wpo-event-text">
+                            <i><img src="assets/images/icon/2.svg" alt=""></i>
+                            <span>Akad</span>
                         </div>
-                        <div class="col col-xl-4 col-lg-4 col-md-12 col-12">
-                            <div class="wpo-static-hero-img">
-                                <div class="wpo-static-hero-ineer-img">
-                                    <img src="assets/images/photo-utama.jpg" alt="photo-utama">
-                                </div>
-                                <div class="shape wow fadeInLeftSlow" data-wow-duration="1400ms"><img src="assets/images/left-shape-3-nh.png" alt=""></div>
-                                <div class="shape2 wow fadeInRightSlow" data-wow-duration="1400ms"><img src="assets/images/left-shape-4-nh.png" alt=""></div>
-                            </div>
+                        <div class="wpo-event-time">
+                            <h4>09.00 WIB</h4>
+                        </div>
+                    </div>
+                    <div class="wpo-event-item">
+                        <div class="wpo-event-text">
+                            <i><img src="assets/images/icon/4.svg" alt=""></i>
+                            <span>Resepsi</span>
+                        </div>
+                        <div class="wpo-event-time">
+                            <h4>11.00 WIB</h4>
+                        </div>
+                    </div>
+                    <div class="wpo-event-item">
+                        <div class="wpo-event-text">
+                            <i><img src="assets/images/icon/3.svg" alt=""></i>
+                            <span>Photo Session</span>
+                        </div>
+                        <div class="wpo-event-time">
+                            <h4>12.00 WIB</h4>
+                        </div>
+                    </div>
+                    <div class="wpo-event-item">
+                        <div class="wpo-event-text">
+                            <i><img src="assets/images/icon/7.svg" alt=""></i>
+                            <span>Penutup</span>
+                        </div>
+                        <div class="wpo-event-time">
+                            <h4>14.00 WIB</h4>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-text marquee" style="padding-top: 50px" >
+            <h2>Kehadiran Anda sangat berarti bagi kami,</h2>
+            <h2>mohon doa restunya.</h2>
+
+        </div>
+
+    </div>
+</section>
+<!-- end events -->
+
+
+<!-- start reference- -->
+<section class="wpo-story-section-s3 section-padding " id="quran">
+    <div class="container-fluid">
+        <div class="wpo-section-title">
+        </div>
+        <div class="wpo-story-wrap">
+            <div class="wpo-story-item">
+                <div class="wpo-story-img-wrap">
+                    <div class="wpo-story-img">
+                        <img src="assets/images/quran.jpg" alt="">
+                        <div class="wpo-img-shape wow fadeInLeftSlow" data-wow-duration="1200ms">
+                            <img src="assets/images/flower-shape-1-nh.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="wpo-story-content">
+                    <div class="wpo-story-content-inner">
+                        <span class="header-style-1">QS. Ar-Rum Ayat 21</span>
+                        <p > <br>  وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ <br> <br>  Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+
+
+                        <div class="inner-shape">
+                            <img src="assets/images/flower-shape-2-nh.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end of introduction -->
-
-    <!-- start of biodata -->
-    <section class="static-hero-s3" id="mempelai">
-        <div class="static-main-box">
-            <div class="container-fluid">
-                <div class="static-inner-box">
-                    <div class="row align-items-center">
-                        <div class="col col-xl-3 col-sm-6 col-lg-3 col-12 order-lg-1 order-2">
-                            <div class="couple-text wow fadeInLeftSlow" data-wow-duration="1500ms">
-                                <div class="couple-text-inner">
-                                    <i><img src="assets/images/bride2.svg" alt=""></i>
-                                    <h3>Nada Syiffa Qolbu</h3>
-                                    <p>Putri ketiga dari: </p>
-                                    <p>Bapak Nandang Helnawan  </p>
-                                    <p> &  </p>
-                                    <p>Ibu Neny Hanifah </p>
-                                    <div class="social">
-                                        <ul>
-                                            <!--<li><a href="#"><i class="ti-facebook"></i></a></li>-->
-                                            <!--<li><a href="#"><i class="ti-twitter-alt"></i></a></li>-->
-                                            <!--<li><a href="#"><i class="ti-instagram"></i></a></li>-->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="shape1"><img src="assets/images/little-flower-3.png" alt=""></div>
-                                <div class="shape2"><img src="assets/images/little-flower-2.png" alt=""></div>
-                                <div class="shape3"><img src="assets/images/little-flower-3.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="col col-xl-6 col-lg-6 col-md-8 col-12 order-lg-2 order-1">
-                            <div class="wpo-static-hero-img">
-                                <div class="wpo-static-hero-ineer-img">
-                                    <img src="assets/images/dua-mempelai.jpg" alt="">
-
-                                    <div class="hero-text wow fadeInUp" data-wow-duration="1500ms">
-                                        <span>We Are Getting Married In</span>
-                                        <p>08 . 11 . 2025</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-xl-3 col-lg-3 col-sm-6 col-12 order-lg-3 order-3">
-                            <div class="couple-text wow fadeInRightSlow" data-wow-duration="1500ms">
-                                <div class="couple-text-inner">
-                                    <i><img src="assets/images/groom2.svg" alt=""></i>
-                                    <h3>Haris Hardianto</h3>
-                                    <p>Putra Pertama dari: </p>
-                                    <p>Bapak Suwahadi  </p>
-                                    <p>& </p>
-                                    <p>Almh. Ibu Sutini </p>
-                                    <div class="social">
-                                        <ul>
-                                            <!--<li><a href="#"><i class="ti-facebook"></i></a></li>-->
-                                            <!--<li><a href="#"><i class="ti-twitter-alt"></i></a></li>-->
-                                            <!--<li><a href="#"><i class="ti-instagram"></i></a></li>-->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="shape1"><img src="assets/images/little-flower-3.png" alt=""></div>
-                                <div class="shape2"><img src="assets/images/little-flower-2.png" alt=""></div>
-                                <div class="shape3"><img src="assets/images/little-flower-3.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of biodata -->
-
-
-    <!-- start events- -->
-    <section class="wpo-event-section-s2 section-padding" id="acara">
-        <div class="container-fluid">
-            <div class="wpo-section-title">
-                <h2 class="poort-text poort-in-right">Akad Nikah</h2>
-            </div>
-            <div class="wpo-event-main">
-                <div class="event-description">
-                    <p>Sabtu, 08 November 2025 </p>
-                    <p>09.00 WIB - 11.00 WIB </p>
-                    <p>Mesjid Raya Baiturrahim</p>
-                    <p>Jl. Jayamekar, Kecamatan. Baros, Kota Sukabumi Jawa Barat </p>
-                    <p ><a href="https://maps.app.goo.gl/FoTJgZd4ni3DWfB28" target="_blank"> <i class="fa fa-map-marker"></i> Google Maps </a> </p>
-                </div>
-            </div>
 
         </div>
+    </div> <!-- end container -->
+</section>
+<!-- end reference -->
 
-        <div class="container-fluid">
-            <div class="wpo-section-title">
-                <h2 class="poort-text poort-in-right">Resepsi Pernikahan</h2>
-            </div>
-            <div class="wpo-event-main">
-                <div class="event-description">
-                    <p>Sabtu, 08 November 2025 </p>
-                    <p>11.00 WIB - 14.00 WIB </p>
-                    <p>Gedung HJ.KUSMIATI</p>
-                    <p>Jl. Jayamekar, Kecamatan. Baros, Kota Sukabumi Jawa Barat </p>
-                    <p style="color: dimgray"><a href="https://maps.app.goo.gl/Yhnsxk82hFMSWGVR6" target="_blank"> <i class="fa fa-map-marker"></i> Google Maps </a> </p>
 
-                </div>
-                <div class="wpo-event-wrap">
-                    <div class="wpo-event-inner">
-                        <div class="wpo-event-item">
-                            <div class="wpo-event-text">
-                                <i><img src="assets/images/icon/2.svg" alt=""></i>
-                                <span>Akad</span>
-                            </div>
-                            <div class="wpo-event-time">
-                                <h4>09.00 WIB</h4>
-                            </div>
-                        </div>
-                        <div class="wpo-event-item">
-                            <div class="wpo-event-text">
-                                <i><img src="assets/images/icon/4.svg" alt=""></i>
-                                <span>Resepsi</span>
-                            </div>
-                            <div class="wpo-event-time">
-                                <h4>11.00 WIB</h4>
-                            </div>
-                        </div>
-                        <div class="wpo-event-item">
-                            <div class="wpo-event-text">
-                                <i><img src="assets/images/icon/3.svg" alt=""></i>
-                                <span>Photo Session</span>
-                            </div>
-                            <div class="wpo-event-time">
-                                <h4>12.00 WIB</h4>
-                            </div>
-                        </div>
-                        <div class="wpo-event-item">
-                            <div class="wpo-event-text">
-                                <i><img src="assets/images/icon/7.svg" alt=""></i>
-                                <span>Penutup</span>
-                            </div>
-                            <div class="wpo-event-time">
-                                <h4>14.00 WIB</h4>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-text marquee" style="padding-top: 50px" >
-                <h2>Kehadiran Anda sangat berarti bagi kami,</h2>
-                <h2>mohon doa restunya.</h2>
-
-            </div>
-
+<!-- start love-story -->
+<section class="wpo-story-section-s2 section-padding" id="story" >
+    <div class="container">
+        <div class="wpo-section-title">
+            <h4 class="poort-text poort-in-right">Our Story</h4>
+            <h2 class="poort-text poort-in-right">Our Sweet Love Story</h2>
         </div>
-    </section>
-    <!-- end events -->
-
-
-    <!-- start reference- -->
-    <section class="wpo-story-section-s3 section-padding " id="quran">
-        <div class="container-fluid">
-            <div class="wpo-section-title">
-            </div>
-            <div class="wpo-story-wrap">
-                <div class="wpo-story-item">
-                    <div class="wpo-story-img-wrap">
+        <div class="wpo-story-wrap">
+            <div class="wpo-story-item">
+                <div class="row">
+                    <div class="col col-lg-6 col-12">
                         <div class="wpo-story-img">
-                            <img src="assets/images/quran.jpg" alt="">
-                            <div class="wpo-img-shape wow fadeInLeftSlow" data-wow-duration="1200ms">
-                                <img src="assets/images/flower-shape-1-nh.png" alt="">
-                            </div>
+                            <img src="assets/images/story/story-1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="wpo-story-content">
-                        <div class="wpo-story-content-inner">
-                            <span class="header-style-1">QS. Ar-Rum Ayat 21</span>
-                            <p > <br>  وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ <br> <br>  Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
-
-
-                            <div class="inner-shape">
-                                <img src="assets/images/flower-shape-2-nh.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div> <!-- end container -->
-    </section>
-    <!-- end reference -->
-
-
-    <!-- start love-story -->
-    <section class="wpo-story-section-s2 section-padding" id="story" >
-        <div class="container">
-            <div class="wpo-section-title">
-                <h4 class="poort-text poort-in-right">Our Story</h4>
-                <h2 class="poort-text poort-in-right">Our Sweet Love Story</h2>
-            </div>
-            <div class="wpo-story-wrap">
-                <div class="wpo-story-item">
-                    <div class="row">
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-img">
-                                <img src="assets/images/story/story-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-content">
-                                <i><img src="assets/images/f-shape-1.png" alt=""></i>
-                                <h2>Awal Perkenalan</h2>
-                                <span>31 Jan 2025</span>
-                                <p>Tidak ada yang kebetulan di dunia ini semua sudah tersusun dengan sangat rapih oleh sang maha kuasa. Diperkenalkan oleh Saudara hingga akhirnya saling mengenal satu sama lain melalui media sosial.</p>
-                                <i><img src="assets/images/f-shape-2.png" alt=""></i>
-                                <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wpo-story-item">
-                    <div class="row">
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-img">
-                                <img src="assets/images/story/story-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-content">
-                                <i><img src="assets/images/f-shape-1.png" alt=""></i>
-                                <h2>Awal Pertemuan</h2>
-                                <span>27 Feb 2025</span>
-                                <p>Sebulan kemudian kami memutuskan bertemu tepat sehari sebelum Ramadhan</p>
-                                <i><img src="assets/images/f-shape-2.png" alt=""></i>
-                                <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wpo-story-item">
-                    <div class="row">
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-img">
-                                <img src="assets/images/story/story-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-content">
-                                <i><img src="assets/images/f-shape-1.png" alt=""></i>
-                                <h2>Awal Menjalin Hubungan</h2>
-                                <span>16 Mar 2025</span>
-                                <p>Setelah saling bersilaturahmi berkenalan dengan kedua keluarga , Kami memutuskan untuk menjalin hubungan yang lebih serius.</p>
-                                <i><img src="assets/images/f-shape-2.png" alt=""></i>
-                                <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wpo-story-item">
-                    <div class="row">
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-img">
-                                <img src="assets/images/story/story-4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col col-lg-6 col-12">
-                            <div class="wpo-story-content">
-                                <i><img src="assets/images/f-shape-1.png" alt=""></i>
-                                <h2>Pernikahan</h2>
-                                <span>08 Nov 2025</span>
-                                <p>Alhamdulillah, Setelah melalui perjalanan panjang yang penuh dengan ujian dan kesabaran, ketika rasa ragu pernah menjadi bayang namun jatuh cinta kali ini membuat kami merasa utuh dan tumbuh hingga akhirnya kami memutuskan untuk menikah dibulan ini.</p>
-                                <i><img src="assets/images/f-shape-2.png" alt=""></i>
-                                <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
-                            </div>
+                    <div class="col col-lg-6 col-12">
+                        <div class="wpo-story-content">
+                            <i><img src="assets/images/f-shape-1.png" alt=""></i>
+                            <h2>Awal Perkenalan</h2>
+                            <span>31 Jan 2025</span>
+                            <p>Tidak ada yang kebetulan di dunia ini semua sudah tersusun dengan sangat rapih oleh sang maha kuasa. Diperkenalkan oleh Saudara hingga akhirnya saling mengenal satu sama lain melalui media sosial.</p>
+                            <i><img src="assets/images/f-shape-2.png" alt=""></i>
+                            <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> <!-- end container -->
-        <div class="flower-shape-1">
-            <div class="flower-sticky">
-                <img src="assets/images/shape3-nh.png" alt="">
+            <div class="wpo-story-item">
+                <div class="row">
+                    <div class="col col-lg-6 col-12">
+                        <div class="wpo-story-img">
+                            <img src="assets/images/story/story-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 col-12">
+                        <div class="wpo-story-content">
+                            <i><img src="assets/images/f-shape-1.png" alt=""></i>
+                            <h2>Awal Pertemuan</h2>
+                            <span>27 Feb 2025</span>
+                            <p>Sebulan kemudian kami memutuskan bertemu tepat sehari sebelum Ramadhan</p>
+                            <i><img src="assets/images/f-shape-2.png" alt=""></i>
+                            <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-story-item">
+                <div class="row">
+                    <div class="col col-lg-6 col-12">
+                        <div class="wpo-story-img">
+                            <img src="assets/images/story/story-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 col-12">
+                        <div class="wpo-story-content">
+                            <i><img src="assets/images/f-shape-1.png" alt=""></i>
+                            <h2>Awal Menjalin Hubungan</h2>
+                            <span>16 Mar 2025</span>
+                            <p>Setelah saling bersilaturahmi berkenalan dengan kedua keluarga , Kami memutuskan untuk menjalin hubungan yang lebih serius.</p>
+                            <i><img src="assets/images/f-shape-2.png" alt=""></i>
+                            <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-story-item">
+                <div class="row">
+                    <div class="col col-lg-6 col-12">
+                        <div class="wpo-story-img">
+                            <img src="assets/images/story/story-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 col-12">
+                        <div class="wpo-story-content">
+                            <i><img src="assets/images/f-shape-1.png" alt=""></i>
+                            <h2>Pernikahan</h2>
+                            <span>08 Nov 2025</span>
+                            <p>Alhamdulillah, Setelah melalui perjalanan panjang yang penuh dengan ujian dan kesabaran, ketika rasa ragu pernah menjadi bayang namun jatuh cinta kali ini membuat kami merasa utuh dan tumbuh hingga akhirnya kami memutuskan untuk menikah dibulan ini.</p>
+                            <i><img src="assets/images/f-shape-2.png" alt=""></i>
+                            <div class="top-shape"><img src="assets/images/tassel.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flower-shape-2">
-            <div class="flower-sticky">
-                <img src="assets/images/shape4-nh.png" alt="">
-            </div>
+    </div> <!-- end container -->
+    <div class="flower-shape-1">
+        <div class="flower-sticky">
+            <img src="assets/images/shape3-nh.png" alt="">
         </div>
-    </section>
-    <!-- end  love-story -->
+    </div>
+    <div class="flower-shape-2">
+        <div class="flower-sticky">
+            <img src="assets/images/shape4-nh.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- end  love-story -->
 
-    <!-- start greeting -->
-    <section class="wpo-contact-section-s2 section-padding pb-0" id="terimakasih">
-        <div class="container">
-            <div class="contact-wrap">
-                <div class="wpo-contact-section-wrapper">
-                    <div class="wpo-contact-form-area">
-                        <div class="wpo-section-title">
-                            <h2>Ucapan Terimakasih</h2>
-                        </div>
+<!-- start greeting -->
+<section class="wpo-contact-section-s2 section-padding pb-0" id="terimakasih">
+    <div class="container">
+        <div class="contact-wrap">
+            <div class="wpo-contact-section-wrapper">
+                <div class="wpo-contact-form-area">
+                    <div class="wpo-section-title">
+                        <h2>Ucapan Terimakasih</h2>
+                    </div>
 
-                        <div class="wpo-section-title">
+                    <div class="wpo-section-title">
                                 <span>
                                 <p style="color: #242424">Atas nama kedua mempelai, kami mengucapkan banyak terima kasih atas kesediaan Anda meluangkan waktu untuk hadir dan memberikan restu.</p>
 
                                 </span>
-                            <span>
+                        <span>
                                 <p style="color: #242424">Doa dan restu yang Anda berikan adalah bekal paling berharga. Semoga Allah SWT membalas segala kebaikan dan ketulusan hati Anda. </p>
                                 <p style="color: #242424">Kami mohon maaf apabila terdapat kekurangan dalam penyambutan dan jamuan kami.</p>
 
                                 </span>
-                            <span>
+                        <span>
                                  <h3>Nada & Haris</h3>
                                 <span style="color: #242424">- Kedua Mempelai</span>
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="back-shape">
-                    <img src="assets/images/rsvp-bg.png" alt="">
-                </div>
-                <div class="shape-1 wow fadeInLeftSlow" data-wow-duration="2000ms"><img
-                        src="assets/images/left-shape-nh.png" alt=""></div>
-                <div class="shape-2 wow fadeInRightSlow" data-wow-duration="2000ms"><img
-                        src="assets/images/right-shape2-nh.png" alt=""></div>
-            </div>
-        </div>
-
-    </section>
-    <!-- end greeting-->
-
-    <!-- start of wpo-site-footer-section -->
-    <footer class="wpo-site-footer">
-        <div class="wpo-lower-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <p class="copyright"> &copy; Copyright 2025 | <a href="index.html">Nada & Haris</a> | All right
-                            reserved.</p>
                     </div>
                 </div>
             </div>
+            <div class="back-shape">
+                <img src="assets/images/rsvp-bg.png" alt="">
+            </div>
+            <div class="shape-1 wow fadeInLeftSlow" data-wow-duration="2000ms"><img
+                    src="assets/images/left-shape-nh.png" alt=""></div>
+            <div class="shape-2 wow fadeInRightSlow" data-wow-duration="2000ms"><img
+                    src="assets/images/right-shape2-nh.png" alt=""></div>
         </div>
-    </footer>
-    <!-- end of wpo-site-footer-section -->
+    </div>
+
+</section>
+<!-- end greeting-->
+
+<!-- start of wpo-site-footer-section -->
+<footer class="wpo-site-footer">
+    <div class="wpo-lower-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <p class="copyright"> &copy; Copyright 2025 | <a href="index.html">Nada & Haris</a> | All right
+                        reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of wpo-site-footer-section -->
 
 </div>
+
+
+
 <!-- end of page-wrapper -->
 
 <!-- All JavaScript files
@@ -482,178 +513,11 @@
 <script src="assets/js/gsap-active.js"></script>
 <!-- Custom script for this template -->
 <script src="assets/js/script.js"></script>
-<script>
- // let audioStarted = false;
- //    const audio = document.getElementById('song');
-
- //    // Start audio on first user interaction with the page
- //    document.addEventListener('click', startAudio, { once: true });
- //    document.addEventListener('touchstart', startAudio, { once: true });
- //    document.addEventListener('keydown', startAudio, { once: true });
-
- //    function startAudio() {
- //        if (!audioStarted) {
- //            audio.play().catch(error => {
- //                console.log('Audio play failed:', error);
- //            });
- //            audioStarted = true;
- //        }
- //    }
-
- //    // Also try autoplay for desktop
- //    audio.play().catch(error => {
- //        // This will fail on mobile, but that's okay
- //        console.log('Autoplay failed (expected on mobile)');
- //    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-  const audio = document.getElementById('song');
-
-  // Wait for first user interaction
-  function enableAudio() {
-    audio.play();
-    document.removeEventListener('click', enableAudio);
-    document.removeEventListener('touchstart', enableAudio);
-  }
-
-  document.addEventListener('click', enableAudio);
-  document.addEventListener('touchstart', enableAudio);
-});
-
-    $('#scrollToSectionButton').click(function(e) {
-        e.preventDefault(); // Prevent default button behavior (e.g., form submission)
-
-        var targetOffset = $('#mempelai').offset().top; // Get the top offset of the target section
-
-        $('html, body').animate({
-            scrollTop: targetOffset // Scroll to the calculated offset
-        }, 1000); // Animation duration in milliseconds (e.g., 1000ms for 1 second)
-
-        const audio = document.querySelector('audio');
-          audio.muted = false;
-          audio.play();
-        
-    });
-
-    window.addEventListener('scroll', function() {
-        // Your code to execute on scroll
-        console.log('Document scrolled!');
-        const audio = document.querySelector('audio');
-        audio.muted = false;
-        audio.play();
-        // You can get scroll position using window.scrollY or window.pageYOffset
-        // console.log('Scroll position:', window.scrollY);
-    });
-
-    
-    // Get a reference to the audio element
-    //const audioPlayer = document.getElementById('myAudio');
-
-    // Function to play the audio
-    // audioPlayer.addEventListener('ended', () => {
-    //     audioPlayer.currentTime = 0; // Rewind to the beginning
-    //     audioPlayer.play();         // Start playing again
-    // });
-
-
-
-    // New Engine player
-    /*document.addEventListener('DOMContentLoaded', () => {
-        // 1. Get DOM Elements
-        const audioPlayer = document.getElementById('audioPlayer');
-        const playlistContainer = document.getElementById('playlist');
-        const startButton = document.getElementById('startButton'); // Get the new button
-        const currentSongDisplay = document.getElementById('currentSongDisplay');
-
-        // 2. Extract Playlist Links
-        const playlistItems = playlistContainer.querySelectorAll('li');
-        const songs = Array.from(playlistItems).map(item => item.getAttribute('data-src'));
-
-        if (songs.length === 0) {
-            console.error("No songs found in the playlist.");
-            return;
-        }
-
-        let currentSongIndex = -1;
-        let hasStarted = false; // New flag to ensure logic runs only once
-
-        // 3. Helper Function to Get a Random Index (Same as before)
-        function getRandomSongIndex() {
-            if (songs.length === 1) return 0;
-            let newIndex;
-            do {
-                newIndex = Math.floor(Math.random() * songs.length);
-            } while (newIndex === currentSongIndex);
-            return newIndex;
-        }
-
-        // 4. Function to Play a Song (Same as before, but the entry point is now different)
-        function playSong(index) {
-            currentSongIndex = index;
-            audioPlayer.src = songs[index];
-            audioPlayer.load();
-
-            const playPromise = audioPlayer.play();
-
-            if (playPromise !== undefined) {
-                playPromise.then(_ => {
-                    console.log(`Now playing song index: ${currentSongIndex}`);
-                    if (currentSongDisplay) {
-                        currentSongDisplay.textContent = currentSongIndex + 1;
-                    }
-                }).catch(error => {
-                    // This catch handles policy issues, but the button should resolve it
-                    console.warn("Play attempt failed (may still be a policy issue after reload).");
-                });
-            }
-        }
-
-        // 5. 🛑 CRITICAL FIX: Attach the start logic to the button click
-        startButton.addEventListener('click', () => {
-
-            console.log('clik button start')
-
-            preloader();
-
-            if (hasStarted) return; // Prevent double clicking from restarting
-
-            const startSongIndex = getRandomSongIndex();
-            playSong(startSongIndex);
-
-            // Hide the button once music starts
-            startButton.style.display = 'none';
-            hasStarted = true;
-        });
-
-
-        // 6. Event Listener for Looping (Same as before)
-        // This logic works fine because it's triggered by the 'ended' event, not an initial autoplay
-        audioPlayer.addEventListener('ended', () => {
-            console.log("Song ended. Playing next random song...");
-            const nextSongIndex = getRandomSongIndex();
-            playSong(nextSongIndex);
-        });
-
-        // 7. Error Handling (Same as before)
-        audioPlayer.addEventListener('error', (e) => {
-            console.error(`Error loading/playing song at index ${currentSongIndex}:`, e);
-            // Try to play the next random song if the current one fails
-            const nextSongIndex = getRandomSongIndex();
-            playSong(nextSongIndex);
-        });
-    });*/
-</script>
 </body>
 
 
 
 </html>
-
-
-
-
-
-
 
 
 
