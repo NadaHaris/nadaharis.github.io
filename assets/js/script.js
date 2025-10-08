@@ -879,7 +879,7 @@
     ==========================================================================*/
     $(window).on('load', function () {
 
-        //preloader();
+        preloader();
 
         // if (!isMobile) {
         //     setTimeout(() => {
@@ -1025,6 +1025,7 @@
 
 
 })(window.jQuery);
+
 
 
 
