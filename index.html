@@ -103,10 +103,10 @@
                                     </p>
                                     <p>
                                     </p>
-                                    <div class="center text-center mt-5">
+                                   <!-- <div class="center text-center mt-5">
 
                                         <button type="button" id="scrollToSectionButton" class="theme-btn"  >🎵 Buka Undangan</button>
-                                    </div>
+                                    </div> -->
 
                                 </div>
                             </div>
@@ -535,6 +535,16 @@
         
     });
 
+    window.addEventListener('scroll', function() {
+        // Your code to execute on scroll
+        console.log('Document scrolled!');
+        const audio = document.querySelector('audio');
+        audio.muted = false;
+        audio.play();
+        // You can get scroll position using window.scrollY or window.pageYOffset
+        // console.log('Scroll position:', window.scrollY);
+    });
+
     
     // Get a reference to the audio element
     //const audioPlayer = document.getElementById('myAudio');
@@ -638,6 +648,7 @@
 
 
 </html>
+
 
 
 
