@@ -881,6 +881,12 @@
 
         preloader();
 
+        if (!isMobile) {
+            setTimeout(() => {
+                playSong();
+            }, 1000);
+        }
+
         sortingGallery();
 
         toggleMobileNavigation();
@@ -890,6 +896,16 @@
         smoothScrolling($("#navbar > ul > li > a[href^='#'], .preview-middle-text a.scrool[href^='#'] "), $(".wpo-site-header .navigation, .site-header .nav").innerHeight());
     });
 
+    function playAudio(){
+        var isYT = false;
+        if(document.body.contains(document.getElementById("song"))) {
+            document.getElementById("song").play();
+            isYT = false;
+        } else {
+            isYT = true;
+            player.playVideo();
+        }
+    }
 
 
     /*==========================================================================
@@ -1003,3 +1019,4 @@
 
 
 })(window.jQuery);
+
