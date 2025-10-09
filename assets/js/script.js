@@ -898,6 +898,7 @@
         // playAudio();
 
         const audio = document.querySelector('audio');
+        audio.loop = true;
         audio.muted = false;
         audio.play();
 
@@ -1015,6 +1016,7 @@
 
 
 })(window.jQuery);
+
 
 
 
